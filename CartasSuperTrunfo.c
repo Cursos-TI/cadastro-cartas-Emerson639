@@ -10,7 +10,8 @@ int main() {
   char estado;
   char codigo[4];
   char nome[50];
-  int populacao, numeropontosturisticos;
+  int populacao;
+  int numeropontosturisticos;
   float area;
   float pib;
   
@@ -37,8 +38,8 @@ int main() {
   printf("Digite o PIB: \n");
   scanf("%f", &pib); 
 
-  //prinf("Digite o numero de pontos turisticos: \n");
-  //scanf("%d", &numeropontosturisticos);
+  printf("Digite o numero de pontos turisticos: \n");
+  scanf("%d", &numeropontosturisticos);
 
 
   // Área para exibição dos dados da cidade
@@ -53,7 +54,7 @@ int main() {
     printf("O total da população é: %d\n", populacao);
     printf("O tamanho da área em km2 é: %.2f\n", area);
     printf("O PIB está em: %.2f bilhões de reais\n", pib);
-  //  printf("O número de pontos turísticos é: %d\n", numeropontosturisticos);
+    printf("O número de pontos turísticos é: %d\n", numeropontosturisticos);
 
 
   printf("\n");
