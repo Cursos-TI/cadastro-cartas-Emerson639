@@ -163,6 +163,23 @@ int main() {
   printf("PIB per Capita: %s (%d)\n", resultPercapita ? "Carta 1 venceu!" : "Carta 2 venceu!", percapita > percapita2);
   printf("Super Poder: %s (%d)\n", resultSuperPoder ? "Carta 1 venceu!" : "Carta 2 venceu!", superPoder > superPoder2);
   printf("\n");
+
+// Determinando a carta vencedora utilizando o atributo população e mostrando o nome da cidade.
+
+  printf("++++++++++ Determinando a cidade vencedora ++++++++++\n");
+  printf("\n");
+
+  printf("Carta 1 - %s: %lu\n", nome, populacao);
+  printf("Carta 2 - %s: %lu\n", nome2, populacao2);
+  
+  if (populacao > populacao2) {
+    printf("Com a população com um total de: %lu habitantes, a cidade: %s foi a vencedora!!!\n", populacao, nome); 
+  } else {
+    printf("Com a população com um total de: %lu habitantes, a cidade: %s foi a vencedora!!!\n", populacao2, nome2);
+  }
+
+    printf("\n");
+
   
 return 0;
 
